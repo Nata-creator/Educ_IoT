@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Aplicaciones</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content style="text-align: justify;">
+      El internet de las cosas esta revolucionando en el mundo, siendo este un 
+        concepto y tecnología que se empieza aplicar en múltiples sectores de la industria,
+         sectores de la salud, comercio, etc., esta tecnología esta cambiando la manera 
+         en la cual las personan se relacionan con el mundo físico, las aplicaciones del
+          IoT pretenden facilitarle al humano la ejecución de ciertas tareas diarias, como
+           también la manera de usar algunos servicios. Esta tecnología se está 
+           convirtiendo en una realidad que poco a poco se introduce en nuestras 
+           vidas, a continuación, se presentan algunos usos y aplicaciones del 
+           internet de las cosas que se encuentran en el mundo y hacen parte del 
+           día a día de las personas:
+    </ion-card-content>
+  </ion-card>
+  <ion-item (click)="OpenZapatillas()" detail>
+    <ion-thumbnail slot="start">
+      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2019/01/nike-adapt-bb.jpg?itok=0VOZxE-o" />
+    </ion-thumbnail>
+    <ion-label>Zapatillas Inteligentes</ion-label>
+  </ion-item>
+
+  <ion-item  (click)="onSensores()" detail>
+    <ion-thumbnail slot="start">
+      <img src="https://destinonegocio.com/wp-content/uploads/2018/09/istock-890846568_low.jpg" />
+    </ion-thumbnail>
+    <ion-label>Sensores para el Campo</ion-label>
+  </ion-item>
+
+  <ion-item (click)="onGafas()" detail>
+    <ion-thumbnail slot="start">
+      <img src="https://blog.phonehouse.es/wp-content/uploads/2013/11/cabeza5.jpg"/>
+    </ion-thumbnail>
+    <ion-label>Gafas y relojes inteligentes</ion-label>
+  </ion-item>
+
+  <ion-item (click)="onBoton()"detail>
+    <ion-thumbnail slot="start">
+      <img src="https://www.media-tics.com/fotos/8/1475010986690_thumb_400.jpg" />
+    </ion-thumbnail>
+    <ion-label>Botones inteligentes</ion-label>
+  </ion-item>
+</ion-content>

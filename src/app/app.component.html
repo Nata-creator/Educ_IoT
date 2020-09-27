@@ -1,0 +1,84 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+        <div class="menu-header-bg"></div>
+        <div class="header-content">
+          <img src="../assets/icon/logo 2017 png.png">
+          <ion-label>
+            <h1><span>Universidad Libre</span></h1>
+            <h2><strong>Ingeniería de Sistemas</strong> </h2>
+          </ion-label>
+        </div>
+       </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="/home" detail>
+            <ion-icon name="home-outline" slot="start" ></ion-icon>
+            Internet de las Cosas
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/que-es" detail>
+            <ion-icon name="help-outline" slot="start"></ion-icon>
+            ¿Qué es el IoT?
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/aplicaciones" detail>
+            <ion-icon name="wifi-outline" slot="start"></ion-icon>
+            Aplicaciones Tecnológicas
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/componentes" detail>
+            <ion-icon name="apps-outline" slot="start"></ion-icon>
+            Componentes
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/beneficios" detail>
+            <ion-icon name="checkmark-outline" slot="start"></ion-icon>
+            Beneficios
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/evaluate" detail>
+            <ion-icon name="document-outline" slot="start"></ion-icon>
+            Evalúate
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item (click)="presentAlert()" detail >
+            <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+            Creadores
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/fuente" detail>
+            <ion-icon name="file-tray-full-outline" slot="start"></ion-icon>
+            Fuentes
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item routerLink="/login" detail>
+            <ion-icon name="share-outline" slot="start"></ion-icon>
+            Cerrar
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet  id="main"></ion-router-outlet>
+</ion-app>

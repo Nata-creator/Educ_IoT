@@ -1,0 +1,268 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Evalúate</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+  <ion-card>
+    <ion-card-header color="primary" text="center">
+      <ion-card-title>Seleccione una ventaja del IoT</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+      <ion-list>
+        <ion-radio-group [(ngModel)]="PrimerBloque" (ionChange)="actualizar()">
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Los minoristas proporcionan bonificación de fidelidad a los clientes preferidos</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio value="minoristas"></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+      
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Los minoristas conocen todo lo que usted compra</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+      
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Una falla en la red puede ser catastrófica para muchas entidades y personas</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+      
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>las empresas poseen mucha información personal acerca de los usuarios</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header color="primary" text="center">
+    <ion-card-title>Seleccione una desventaja del IoT</ion-card-title>
+  </ion-card-header>
+      <ion-list>
+        <ion-radio-group [(ngModel)]="SegundoBloque" (ionChange)="actualizar()">     
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Los gobiernos pueden supervisar el medio ambiente</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio value="gobierno"></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+      
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Las fabricas pueden reducir tiempos de inactividad</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+      
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Muchos sitios en la web solicitan información personal para continuar</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+
+          <ion-item>
+            <ion-row>
+              <ion-col size="10" size-ms>
+                <p>Ninguna de las anteriores es un respuesta correcta</p>
+              </ion-col>
+              <ion-col>
+                <ion-radio></ion-radio>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    <ion-card-content>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header color="primary" text="center">
+    <ion-card-title>¿Qué es un sensor?</ion-card-title>
+  </ion-card-header>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="TercerBloque" (ionChange)="actualizar()">     
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Es un dispositivo cuya misión es ser la base del mundo conectado</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio value="sensor"></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Algo que ofrece productos y servicios por medio de un sitio web</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Un sensor o un grupo de sensore es todo aquello que almacene datos</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Es un dispositivo que mide una propiedad física o realiza determinada accón de acuerdo a un evento recibido</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  <ion-card-content>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header color="primary" text="center">
+    <ion-card-title>El internet de las cosas...</ion-card-title>
+  </ion-card-header>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="CuartoBloque" (ionChange)="actualizar()">     
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Es el principal sistema de ventas del mundo</p>
+            </ion-col>
+            <ion-col size="2" size-ms>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Supera cualquier otro sistema de su entorno.</p>
+            </ion-col>
+            <ion-col size="2" size-ms>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Se compone de millones de dispositivos y sensores conectados a través de internet</p>
+            </ion-col>
+            <ion-col size="2" size-ms>
+              <ion-radio value="dispositivos"></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Se compone únicamente de inteligencia artificial automatizada para las empresas.</p>
+            </ion-col>
+            <ion-col size="2" size-ms>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  <ion-card-content>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header color="primary" text="center">
+    <ion-card-title>Internet de las cosas conectará objetos inanimados a la red mediante sensores inteligentes.</ion-card-title>
+  </ion-card-header>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="QuintoBloque" (ionChange)="actualizar()">     
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Falso</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    
+        <ion-item>
+          <ion-row>
+            <ion-col size="10" size-ms>
+              <p>Verdadero</p>
+            </ion-col>
+            <ion-col>
+              <ion-radio value="verdad"></ion-radio>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  <ion-card-content>
+  </ion-card-content>
+</ion-card>
+
+<ion-button expand="block" fill="outline" (click)="onMostrar()">Calcular Nota</ion-button>
+</ion-grid>  
+</ion-content>
